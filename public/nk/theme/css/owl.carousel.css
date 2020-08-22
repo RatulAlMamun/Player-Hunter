@@ -1,0 +1,162 @@
+/* 
+ *  Core Owl Carousel CSS File
+ *  v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+/* display none until init */
+.owl-carousel{
+    display: none;
+    position: relative;
+    width: 100%;
+    -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+    display: none;
+    position: relative;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+    -webkit-transition: height 500ms ease-in-out;
+    -moz-transition: height 500ms ease-in-out;
+    -ms-transition: height 500ms ease-in-out;
+    -o-transition: height 500ms ease-in-out;
+    transition: height 500ms ease-in-out;
+}
+    
+.owl-carousel .owl-item{
+    float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+    cursor: pointer;
+}
+.owl-controls {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+
+
+
+/*-- feedback --*/ 
+.feedback {
+  background: url(../images/2.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding:5em 0;
+}
+.agileits-feedback-grids {
+  background: rgba(0, 0, 0, 0.47);
+  padding: 1em;
+  -webkit-box-shadow: 0px 1px 7px #8e8e8e;
+  -moz-box-shadow: 0px 1px 7px #8e8e8e;
+  box-shadow: 0px 1px 7px #8e8e8e;
+}
+.feedback-top {
+    padding: 1em 1.5em;
+    background: rgba(0, 0, 0, 0.47);
+    position: relative;
+    border-radius: 5px;
+}
+.feedback-top p{
+  color:#fff;
+}
+.feedback-top:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 27%;
+  width: 0;
+  height: 0;
+  border-top: 9px solid rgba(0, 0, 0, 0.47);
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+}
+.feedback-img{
+    float: left;
+    width: 28%;
+}
+.feedback-grids {
+    margin: 2em auto 0;
+    width: 55%;
+}
+.feedback-img img{
+    width:100%;
+}
+.feedback-info {
+    margin: 1em !important;
+}
+.feedback-img-info{
+    float: left;
+    width: 65%;
+    margin-left: .5em;
+}
+.feedback-img-info h5 {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 600;
+}
+.feedback-img-info p {
+    color: #99bc59;
+    font-size: 1em;
+    margin: 0.5em 0 0;
+}
+/*-- //feedback --*/
+
+h3.w3l_header.ggg, p.hhh {
+    color: #fff;
+}
+
+.w3l_header {
+    font-size: 50px;
+    color: #99bc59;
+    letter-spacing: 1px;
+    position: relative;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.wthree_head_section p {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
+    letter-spacing: 1px;
+    color: #5e5e5e;
+    line-height: 1.8em;
+}
